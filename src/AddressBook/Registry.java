@@ -7,15 +7,17 @@ import java.util.*;
  * Created by Robin on 20/12/2016.
  */
 public class Registry implements Serializable{
-    protected static List<Contact> contacts = new ArrayList<Contact>();
+
+    protected static ArrayList<Contact> contacts = new ArrayList<Contact>();
     UUID id = UUID.randomUUID();
+
     public void addContact(String firstName, String lastName, String email){
         contacts.add(new LocalContact(firstName, lastName, email, id));
     }
 
     public ArrayList<Contact> getContacts(){
 
-        return new ArrayList<>();
+        return contacts;
     }
 
     public void deleteContact(String id){
@@ -27,8 +29,13 @@ public class Registry implements Serializable{
     }
 
     public ArrayList<Contact> search(String term){
-
-        return new ArrayList<>();
+        ArrayList<Contact> searchList = new ArrayList<>();
+        for(Contact c : contacts){
+            if(c.getFirstName().contains(term) || c.getLastName().contains(term)){
+                searchList.add(c);
+            }
+        }
+        return searchList;
     }
 
     public void load(){
