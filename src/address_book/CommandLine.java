@@ -3,9 +3,6 @@ package address_book;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Miroch on 2016-12-20.
- */
 public class CommandLine {
 
     String command;

@@ -14,6 +14,7 @@ public class CatalogueClient {
     private InputStreamReader isr = null;
     private OutputStream outputStream = null;
     private PrintWriter writer = null;
+    private BufferedReader reader = null;
 
     public CatalogueClient (String host, int port){
         this.host = host;
@@ -28,15 +29,16 @@ public class CatalogueClient {
         }
     }
 
-    public void sendRequest(){
+    public void sendRequest(String request){
 
         try {
             inputStream = socket.getInputStream();
             isr = new InputStreamReader(inputStream);
+            reader = new BufferedReader(isr);
             outputStream = socket.getOutputStream();
             writer = new PrintWriter(outputStream);
 
-            writer.println("getall");
+            writer.println(request);
             writer.flush();
 
 
@@ -49,8 +51,21 @@ public class CatalogueClient {
 
         String fromServer;
         StringBuilder sb = new StringBuilder();
+<<<<<<< HEAD:src/contacts/CatalogueClient.java
         //String.file
         return "";
+=======
+        String line = "";
+        try {
+            while ((line = reader.readLine()).length()>0){
+                sb.append(line + "\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        fromServer = sb.toString();
+        return fromServer;
+>>>>>>> 9d36117ef6a90926fa6a01557683379388ac7ffc:src/AddressBook/CatalogueClient.java
     }
 
     public void disconnect(){
@@ -61,9 +76,9 @@ public class CatalogueClient {
             writer.close();
             isr.close();
             socket.close();
+            reader.close();
         } catch(Exception ex) {
             ex.printStackTrace();
         }
-
     }
 }
