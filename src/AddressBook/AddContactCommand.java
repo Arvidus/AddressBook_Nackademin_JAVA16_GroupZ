@@ -3,9 +3,25 @@ package AddressBook;
 
 public class AddContactCommand implements Command{
 
-    //parameters
-    //Registry
+    String parameters;
+    Registry registry = new Registry();
+
+    public AddContactCommand(ConsolePrinter consolePrinter, Registry registry, String parameters) {
+
+    }
 
     @Override
-    public AddContactCommand(ConsolePrinter consolePrinter, re)
+    public void getName() {
+
+    }
+
+    @Override
+    public void getDescription() {
+
+    }
+
+    @Override
+    public void execute() {
+
+    }
 }

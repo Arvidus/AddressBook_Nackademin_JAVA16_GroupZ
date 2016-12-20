@@ -7,7 +7,7 @@ public class Console implements ConsolePrinter {
     }
 
     @Override
-    public print(String input){
+    public void print(String input) {
 
     }
 }
