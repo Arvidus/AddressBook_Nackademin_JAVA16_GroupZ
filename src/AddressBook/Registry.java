@@ -7,7 +7,7 @@ import java.util.*;
  * Created by Robin on 20/12/2016.
  */
 public class Registry implements Serializable{
-    private List<Contact> contacts = new ArrayList<Contact>();
+    protected static List<Contact> contacts = new ArrayList<Contact>();
     UUID id = UUID.randomUUID();
     public void addContact(String firstName, String lastName, String email){
         contacts.add(new LocalContact(firstName, lastName, email, id));
