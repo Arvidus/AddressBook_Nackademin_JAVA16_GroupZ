@@ -1,11 +1,12 @@
 package AddressBook;
 
+import java.io.Serializable;
 import java.util.UUID;
 
 /**
  * Created by Robin on 20/12/2016.
  */
-public class LocalContact extends ContactDetails implements Contact{
+public class LocalContact extends ContactDetails implements Contact, Serializable{
     private UUID id;
 
     public LocalContact(String firstName, String lastName, String email, UUID id){

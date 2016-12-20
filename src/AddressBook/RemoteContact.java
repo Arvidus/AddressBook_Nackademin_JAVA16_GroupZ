@@ -1,9 +1,11 @@
 package AddressBook;
 
+import java.io.Serializable;
+
 /**
  * Created by Robin on 20/12/2016.
  */
-public class RemoteContact extends ContactDetails implements Contact {
+public class RemoteContact extends ContactDetails implements Contact, Serializable{
     private String id;
 
     @Override
