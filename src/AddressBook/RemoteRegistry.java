@@ -3,6 +3,7 @@ package AddressBook;
 import java.util.ArrayList;
 
 public class RemoteRegistry {
+
     protected ArrayList<Contact> remoteContacts = new ArrayList<Contact>();
 
     public ArrayList<Contact> getContacts(){
