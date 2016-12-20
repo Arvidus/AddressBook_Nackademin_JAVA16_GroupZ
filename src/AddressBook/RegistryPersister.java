@@ -18,7 +18,7 @@ public class RegistryPersister {
             ex.printStackTrace();
         }
     }
-    public void load(){
+    public static void load(){
         File file = new File("Contacts.txt");
         try (FileInputStream load = new FileInputStream(file);
             ObjectInputStream ois = new ObjectInputStream(load)){

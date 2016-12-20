@@ -32,6 +32,6 @@ public class Registry implements Serializable{
     }
 
     public void load(){
-
+        RegistryPersister.load();
     }
 }
