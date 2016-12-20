@@ -11,13 +11,15 @@ public class CommandLine {
     String command;
     List<String> parameters = new ArrayList<>();
 
-    public CommandLine parse(String command) {
+    private CommandLine(){
+
+    }
+
+    public static CommandLine parse(String command) {
 
         CommandLine commandLine = new CommandLine();
 
         String[] parameterLines = command.split(" ");
-
-        System.out.println(parameterLines.length);
 
         for (int i = 0; i < parameterLines.length -1; i++){
             commandLine.parameters.add(parameterLines[i]);

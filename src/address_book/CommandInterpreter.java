@@ -5,7 +5,7 @@ import contacts.Registry;
 public class CommandInterpreter {
 
 
-    public Command interpret (CommandLine commandLine){
+/*    public Command interpret (CommandLine commandLine){
 
 
         switch(commandLine.parameters.get(0)){
@@ -13,6 +13,7 @@ public class CommandInterpreter {
                 AddContactCommand addContactCommand = new AddContactCommand()
                 break;
             case "delete":
+
                 break;
             case "list":
                 break;
@@ -23,6 +24,6 @@ public class CommandInterpreter {
             case "quit":
                 break;
         }
-    }
+    }*/
 
 }

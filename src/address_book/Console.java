@@ -1,5 +1,7 @@
 package address_book;
 
+import jdk.internal.org.objectweb.asm.Handle;
+
 import java.util.Scanner;
 
 public class Console implements ConsolePrinter {
@@ -11,8 +13,7 @@ public class Console implements ConsolePrinter {
 
         while (true){
             input = scanner.nextLine();
-            CommandLine commandLine = new CommandLine();
-            commandLine = commandLine.parse(input);
+            CommandLine.parse(input);
 
         }
     }
