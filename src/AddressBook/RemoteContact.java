@@ -8,6 +8,13 @@ import java.io.Serializable;
 public class RemoteContact extends ContactDetails implements Contact, Serializable{
     private String id;
 
+    public RemoteContact(String id, String firstName, String lastName, String email){
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
+
     @Override
     public String getID() {
         return id;
