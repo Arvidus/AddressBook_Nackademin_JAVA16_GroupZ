@@ -2,5 +2,5 @@ package AddressBook;
 
 public interface InputHandler {
 
-    public void handler(CommandLine commandLine);
+    public void handle(CommandLine commandLine);
 }
