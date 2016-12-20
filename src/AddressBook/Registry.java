@@ -19,7 +19,11 @@ public class Registry implements Serializable{
     }
 
     public void deleteContact(String id){
-
+        for(Contact c : contacts){
+            if (c.getID().equals(id)){
+                contacts.remove(c);
+            }
+        }
     }
 
     public ArrayList<Contact> search(String term){
