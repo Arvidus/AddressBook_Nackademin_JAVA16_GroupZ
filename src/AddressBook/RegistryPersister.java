@@ -3,9 +3,6 @@ package AddressBook;
 import java.io.*;
 import java.util.ArrayList;
 
-/**
- * Created by Robin on 20/12/2016.
- */
 public class RegistryPersister {
     public static synchronized void save(){
         File file = new File("Contacts.txt");

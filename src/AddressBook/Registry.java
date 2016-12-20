@@ -3,9 +3,6 @@ package AddressBook;
 import java.io.Serializable;
 import java.util.*;
 
-/**
- * Created by Robin on 20/12/2016.
- */
 public class Registry implements Serializable{
 
     protected static ArrayList<Contact> contacts = new ArrayList<Contact>();
