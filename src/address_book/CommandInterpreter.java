@@ -1,16 +1,14 @@
 package address_book;
 
-import contacts.Registry;
-
 public class CommandInterpreter {
 
 
-/*    public Command interpret (CommandLine commandLine){
+    public Command interpret (CommandLine commandLine){
 
 
         switch(commandLine.parameters.get(0)){
             case "add":
-                AddContactCommand addContactCommand = new AddContactCommand()
+                AddContactCommand addContactCommand = new AddContactCommand();
                 break;
             case "delete":
 
@@ -24,6 +22,6 @@ public class CommandInterpreter {
             case "quit":
                 break;
         }
-    }*/
+    }
 
 }
