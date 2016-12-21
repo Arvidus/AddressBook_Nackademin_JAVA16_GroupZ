@@ -1,6 +1,10 @@
 
 package address_book;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ab323e3c4a3181cf7148cddc4f95ac1fbaee8958
 import java.util.Scanner;
 
 public class CommandLineInterface implements InputHandler {
