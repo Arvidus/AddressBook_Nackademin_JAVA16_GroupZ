@@ -21,12 +21,12 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
 <<<<<<< HEAD
       <file leaf-file-name="RemoteCatalogueProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/address_book/RemoteCatalogueProxy.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/RemoteCatalogueProxy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
 =======
       <file leaf-file-name="CommandInterpreter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/address_book/CommandInterpreter.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/CommandInterpreter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
 >>>>>>> 60289c3216b942b0d73d24a5c1b5183b0f940a91
@@ -38,13 +38,13 @@
       </file>
 <<<<<<< HEAD
       <file leaf-file-name="CatalogueLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/address_book/CatalogueLoader.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/CatalogueLoader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
 =======
       <file leaf-file-name="Console.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/address_book/Console.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/Console.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
             <state relative-caret-position="400">
@@ -58,7 +58,7 @@
         </entry>
       </file>
       <file leaf-file-name="InputHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/address_book/InputHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/InputHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
               <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
@@ -74,11 +74,11 @@
       </file>
 <<<<<<< HEAD
       <file leaf-file-name="CommandLineInterface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/address_book/CommandLineInterface.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/CommandLineInterface.java">
 =======
 <<<<<<< HEAD
       <file leaf-file-name="RemoteCatalogueFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/address_book/RemoteCatalogueFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/RemoteCatalogueFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
@@ -88,7 +88,7 @@
               </folding>
 =======
       <file leaf-file-name="ConsolePrinter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/address_book/ConsolePrinter.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/ConsolePrinter.java">
 >>>>>>> 0eca56fe201aa039141f478039f09920a92f12bc
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
@@ -101,7 +101,7 @@
       </file>
 <<<<<<< HEAD
       <file leaf-file-name="AtomicRemoteCatalogueProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/address_book/AtomicRemoteCatalogueProxy.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/AtomicRemoteCatalogueProxy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
               <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
@@ -110,7 +110,7 @@
               </folding>
 =======
       <file leaf-file-name="Contact.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/address_book/Contact.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/Contact.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="25">
               <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -120,7 +120,7 @@
         </entry>
       </file>
       <file leaf-file-name="AddContactCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/address_book/AddContactCommand.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/AddContactCommand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -132,7 +132,7 @@
       </file>
 <<<<<<< HEAD
       <file leaf-file-name="CatalogueClient.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/address_book/CatalogueClient.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/CatalogueClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="131">
               <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
@@ -141,7 +141,7 @@
               </folding>
 =======
       <file leaf-file-name="Command.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/address_book/Command.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/Command.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="50">
               <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
@@ -154,7 +154,7 @@
 <<<<<<< HEAD
 =======
       <file leaf-file-name="CommandLine.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/address_book/CommandLine.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/CommandLine.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="550">
               <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
@@ -164,7 +164,7 @@
         </entry>
       </file>
       <file leaf-file-name="RemoteCatalogueProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/address_book/RemoteCatalogueProxy.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/RemoteCatalogueProxy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
               <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
@@ -174,7 +174,7 @@
         </entry>
       </file>
       <file leaf-file-name="Registry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/address_book/Registry.java">
+        <entry file="file://$PROJECT_DIR$/src/AddressBook/Registry.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
               <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -206,28 +206,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/address_book/ContactDetails.java" />
-        <option value="$PROJECT_DIR$/src/address_book/LocalContact.java" />
-        <option value="$PROJECT_DIR$/src/address_book/AutoSave.java" />
-        <option value="$PROJECT_DIR$/src/address_book/RegistryPersister.java" />
-        <option value="$PROJECT_DIR$/src/address_book/Registry.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/ContactDetails.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/LocalContact.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/AutoSave.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/RegistryPersister.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/Registry.java" />
 <<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/address_book/RemoteContact.java" />
-        <option value="$PROJECT_DIR$/src/address_book/RemoteRegistry.java" />
-        <option value="$PROJECT_DIR$/src/address_book/RemoteCatalogueProxy.java" />
-        <option value="$PROJECT_DIR$/src/address_book/CatalogueLoader.java" />
-        <option value="$PROJECT_DIR$/src/address_book/RemoteCatalogueFactory.java" />
-        <option value="$PROJECT_DIR$/src/address_book/AtomicRemoteCatalogueProxy.java" />
-        <option value="$PROJECT_DIR$/src/address_book/CatalogueClient.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/RemoteContact.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/RemoteRegistry.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/RemoteCatalogueProxy.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/CatalogueLoader.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/RemoteCatalogueFactory.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/AtomicRemoteCatalogueProxy.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/CatalogueClient.java" />
 =======
-        <option value="$PROJECT_DIR$/src/address_book/Contact.java" />
-        <option value="$PROJECT_DIR$/src/address_book/CommandInterpreter.java" />
-        <option value="$PROJECT_DIR$/src/address_book/AddContactCommand.java" />
-        <option value="$PROJECT_DIR$/src/address_book/CommandLine.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/Contact.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/CommandInterpreter.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/AddContactCommand.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/CommandLine.java" />
 <<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/address_book/InputHandler.java" />
-        <option value="$PROJECT_DIR$/src/address_book/CommandLineInterface.java" />
-        <option value="$PROJECT_DIR$/src/address_book/Console.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/InputHandler.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/CommandLineInterface.java" />
+        <option value="$PROJECT_DIR$/src/AddressBook/Console.java" />
 =======
 >>>>>>> 60289c3216b942b0d73d24a5c1b5183b0f940a91
 >>>>>>> 0eca56fe201aa039141f478039f09920a92f12bc
@@ -287,7 +287,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="address_book" />
+              <option name="myItemId" value="AddressBook" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -780,17 +780,17 @@
   </component>
   <component name="editorHistoryManager">
 <<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/address_book/RemoteCatalogueProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/RemoteCatalogueProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
 =======
-    <entry file="file://$PROJECT_DIR$/src/address_book/ContactDetails.java" />
-    <entry file="file://$PROJECT_DIR$/src/address_book/LocalContact.java" />
-    <entry file="file://$PROJECT_DIR$/src/address_book/RemoteContact.java" />
-    <entry file="file://$PROJECT_DIR$/src/address_book/ContactDetails.java" />
-    <entry file="file://$PROJECT_DIR$/src/address_book/RegistryPersister.java" />
-    <entry file="file://$PROJECT_DIR$/src/address_book/ConsolePrinter.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/ContactDetails.java" />
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/LocalContact.java" />
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/RemoteContact.java" />
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/ContactDetails.java" />
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/RegistryPersister.java" />
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/ConsolePrinter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
@@ -802,7 +802,7 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/address_book/CatalogueLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/CatalogueLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
@@ -810,7 +810,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/RemoteCatalogueFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/RemoteCatalogueFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
@@ -821,7 +821,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/AtomicRemoteCatalogueProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/AtomicRemoteCatalogueProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
@@ -831,7 +831,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/CatalogueClient.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/CatalogueClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -841,9 +841,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/ContactDetails.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/ContactDetails.java">
 =======
-    <entry file="file://$PROJECT_DIR$/src/address_book/CommandLineInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/CommandLineInterface.java">
 >>>>>>> 60289c3216b942b0d73d24a5c1b5183b0f940a91
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -853,7 +853,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/address_book/Contact.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
@@ -861,7 +861,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/ContactDetails.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/ContactDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
@@ -869,7 +869,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/RegistryPersister.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/RegistryPersister.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
@@ -879,7 +879,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/AutoSave.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/AutoSave.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
@@ -887,10 +887,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/LocalContact.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/LocalContact.java">
 =======
 >>>>>>> 0eca56fe201aa039141f478039f09920a92f12bc
-    <entry file="file://$PROJECT_DIR$/src/address_book/AutoSave.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/AutoSave.java">
 >>>>>>> 60289c3216b942b0d73d24a5c1b5183b0f940a91
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -899,7 +899,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/Registry.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/Registry.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
         <state relative-caret-position="199">
@@ -918,7 +918,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/RemoteContact.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/RemoteContact.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
         <state relative-caret-position="238">
@@ -941,7 +941,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/Command.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/Command.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
         <state relative-caret-position="50">
@@ -950,7 +950,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/AddContactCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/AddContactCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -966,7 +966,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/RemoteCatalogueProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/RemoteCatalogueProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
@@ -984,7 +984,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/address_book/LocalContact.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/LocalContact.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="81" lean-forward="false" selection-start-line="8" selection-start-column="81" selection-end-line="8" selection-end-column="81" />
@@ -1002,9 +1002,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/AutoSave.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/AutoSave.java">
 =======
-    <entry file="file://$PROJECT_DIR$/src/address_book/CommandInterpreter.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/CommandInterpreter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
@@ -1013,9 +1013,9 @@
       </provider>
     </entry>
 <<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/address_book/CommandLineInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/CommandLineInterface.java">
 =======
-    <entry file="file://$PROJECT_DIR$/src/address_book/Command.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/Command.java">
 >>>>>>> 60289c3216b942b0d73d24a5c1b5183b0f940a91
 >>>>>>> 0eca56fe201aa039141f478039f09920a92f12bc
       <provider selected="true" editor-type-id="text-editor">
@@ -1025,7 +1025,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/Console.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/Console.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
@@ -1037,10 +1037,10 @@
       </provider>
     </entry>
 <<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/address_book/InputHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/InputHandler.java">
 =======
 <<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/address_book/ContactDetails.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/ContactDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
@@ -1048,7 +1048,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/RemoteContact.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/RemoteContact.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
@@ -1065,7 +1065,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/RemoteRegistry.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/RemoteRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
@@ -1077,7 +1077,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/Registry.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/Registry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
           <caret line="38" column="5" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
@@ -1097,7 +1097,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/CommandLine.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/CommandLine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
@@ -1106,7 +1106,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/Contact.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
@@ -1114,7 +1114,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/RemoteCatalogueProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/RemoteCatalogueProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
@@ -1122,7 +1122,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/CatalogueLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/CatalogueLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
@@ -1130,7 +1130,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/AtomicRemoteCatalogueProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/AtomicRemoteCatalogueProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
@@ -1140,7 +1140,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/RemoteCatalogueFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/RemoteCatalogueFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
@@ -1151,7 +1151,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/address_book/CatalogueClient.java">
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/CatalogueClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
