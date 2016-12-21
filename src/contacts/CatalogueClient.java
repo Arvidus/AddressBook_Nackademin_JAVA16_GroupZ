@@ -51,13 +51,8 @@ public class CatalogueClient {
 
         String fromServer;
         StringBuilder sb = new StringBuilder();
-<<<<<<< HEAD:src/AddressBook/CatalogueClient.java
-=======
-<<<<<<< HEAD:src/contacts/CatalogueClient.java
->>>>>>> 9345dc4bc16aec9f2e49bee7d14260ac1c1f4d2d:src/contacts/CatalogueClient.java
         //String.file
         return "";
-=======
         String line = "";
         try {
             while ((line = reader.readLine()).length()>0){
@@ -68,7 +63,6 @@ public class CatalogueClient {
         }
         fromServer = sb.toString();
         return fromServer;
->>>>>>> 9d36117ef6a90926fa6a01557683379388ac7ffc:src/AddressBook/CatalogueClient.java
     }
 
     public void disconnect(){
