@@ -1,9 +1,11 @@
 package AddressBook;
 
+import java.io.InputStream;
 import java.util.Scanner;
 
 public class Console implements ConsolePrinter {
 
+        CommandLine commandLine = new CommandLine();
 
     public Console(){
 
@@ -13,22 +15,19 @@ public class Console implements ConsolePrinter {
 
         while (true){
             input = scanner.nextLine();
-            CommandLine.parse(input);
-            registerInputHandler(new InputHandler() {
-                @Override
-                public void handle(CommandLine commandLine) {
-                }
-            });
+            commandLine = CommandLine.parse(input);
+            break;
         }
     }
 
     public void registerInputHandler(InputHandler inputHandler){
-
+        inputHandler.handle(commandLine);
     }
 
 
     @Override
     public void print(String feedback) {
-      System.out.println(feedback);
+
+        System.out.println(feedback);
     }
 }

@@ -9,7 +9,7 @@ public class CatalogueLoader {
     }
     public void run() {
         RemoteCatalogueFactory rcf = new RemoteCatalogueFactory(61616);
-        RemoteCatalogueProxy rcp = rcf.create("localhost");
+        RemoteCatalogueProxy rcp = rcf.create("172.20.200.240");
         ArrayList<String> contactsFromServer= rcp.getContacts();
         for(String s : contactsFromServer){
             if(s.length() > 0) {

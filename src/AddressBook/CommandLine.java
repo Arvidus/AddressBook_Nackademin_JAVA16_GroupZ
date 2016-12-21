@@ -8,7 +8,7 @@ public class CommandLine {
     String command;
     List<String> parameters = new ArrayList<>();
 
-    private CommandLine(){
+    protected CommandLine(){
 
     }
 

@@ -1,14 +1,20 @@
 package AddressBook;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CommandInterpreter {
 
+    Registry registry = new Registry();
 
-/*    public Command interpret (CommandLine commandLine){
 
+    public Command interpret (CommandLine commandLine){
 
-        switch(commandLine.parameters.get(0)){
+        List<String> temp = commandLine.parameters;
+
+        switch(temp.get(0)){
             case "add":
-                AddContactCommand addContactCommand = new AddContactCommand()
+                    AddContactCommand(, temp, registry);
                 break;
             case "delete":
 
@@ -22,6 +28,10 @@ public class CommandInterpreter {
             case "quit":
                 break;
         }
-    }*/
 
+        commandLine.command = "";
+        commandLine.parameters = new ArrayList<String>();
+
+        return Command;
+    }
 }

@@ -9,7 +9,7 @@ public class AddContactCommand implements Command{
     List<String> parameters = new ArrayList<String>();
     Registry registry = new Registry();
 
-    public AddContactCommand(ConsolePrinter consolePrinter, Registry registry, String parameters) {
+    public AddContactCommand(ConsolePrinter consolePrinter, Registry registry, ArrayList<String> parameters) {
 
     }
 
