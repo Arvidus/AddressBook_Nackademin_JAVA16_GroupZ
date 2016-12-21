@@ -49,7 +49,7 @@ public class CatalogueClient {
 
         String fromServer;
         StringBuilder sb = new StringBuilder();
-        String.file
+        //String.file
         return "";
     }
 
