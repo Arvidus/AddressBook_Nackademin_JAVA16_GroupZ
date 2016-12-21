@@ -27,4 +27,8 @@ public class AddContactCommand implements Command{
     public void execute() {
 
     }
+
+    private void validate(){
+
+    }
 }

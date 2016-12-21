@@ -1,7 +1,29 @@
 package AddressBook;
 
-/**
- * Created by Gustav on 2016-12-21.
- */
-public class ListCommand {
+
+public class ListCommand implements Command {
+
+    public ListCommand(Registry registry){
+        for (Contact contact : registry.getContacts()){
+            System.out.println(contact.getID() + " " + contact.getFirstName() + " " + contact.getLastName() + " " + contact.getEmailAdress() + "\n");
+        }
+
+
+    }
+
+    public void getName(){
+
+    }
+
+    public void getDescription(){
+
+    }
+
+    public void execute(){
+
+    }
+
+    private void validate(){
+
+    }
 }
