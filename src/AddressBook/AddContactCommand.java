@@ -18,12 +18,12 @@ public class AddContactCommand implements Command{
 
     @Override
     public String getName() {
-        return (parameters.get(1) + " " + parameters.get(2));
+        return "add";
     }
 
     @Override
     public String getDescription() {
-        return (parameters.get(1) + " " + parameters.get(2));
+        return "adds a contact using firstname, lastname and emailadress.";
     }
 
     @Override

@@ -29,9 +29,11 @@ public class CommandInterpreter{
                 deleteContactCommand.execute();
                 break;
             case "list":
-                new ListCommand(registry);
+                ListCommand listCommand = new ListCommand(registry);
+                listCommand.execute();
                 break;
             case "search":
+                SearchCommand searchCommand = new SearchCommand();
                 break;
             case "help":
                 break;
