@@ -4,7 +4,7 @@ package AddressBook;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommandInterpreter {
+public class CommandInterpreter{
 
     Registry registry = new Registry();
     ConsolePrinter consolePrinter = null;
@@ -14,7 +14,7 @@ public class CommandInterpreter {
     }
 
 
-    public void interpret(CommandLine commandLine){
+    public void interpret(CommandLine commandLine) throws InvalidCommandException{
 
         List<String> temp = commandLine.parameters;
         //ArrayList<String> temp = new ArrayList<>();
@@ -37,6 +37,8 @@ public class CommandInterpreter {
                 break;
             case "quit":
                 break;
+            default:
+                throw new InvalidCommandException("Could not interpret the command");
         }
     }
 
