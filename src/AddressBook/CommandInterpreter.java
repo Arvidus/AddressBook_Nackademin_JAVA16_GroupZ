@@ -38,6 +38,8 @@ public class CommandInterpreter{
             case "help":
                 break;
             case "quit":
+                QuitCommand quitCommand = new QuitCommand(consolePrinter, temp);
+                quitCommand.execute();
                 break;
             default:
                 throw new InvalidCommandException("Could not interpret the command");
