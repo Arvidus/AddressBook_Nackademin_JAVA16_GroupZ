@@ -5,22 +5,27 @@ import java.util.*;
 
 public class Registry implements Serializable{
 
-    protected static ArrayList<Contact> contacts = new ArrayList<Contact>();
+
+
+    protected ArrayList<Contact> contacts = new ArrayList<Contact>();
     UUID id = UUID.randomUUID();
+
+    public Registry(){}
 
     public void addContact(String firstName, String lastName, String email){
         contacts.add(new LocalContact(firstName, lastName, email, id));
     }
 
     public ArrayList<Contact> getContacts(){
-
         return contacts;
     }
 
     public void deleteContact(String id){
         for(Contact c : contacts){
-            if (c.getID().equals(id)){
-                contacts.remove(c);
+            if (c instanceof RemoteContact) {
+                if (c.getID().equals(id)) {
+                    contacts.remove(c);
+                }
             }
         }
     }
@@ -35,7 +40,7 @@ public class Registry implements Serializable{
         return searchList;
     }
 
-    public void load(){
-        RegistryPersister.load();
+    public void load(ArrayList<Contact> contacts){
+        this.contacts.addAll(contacts);
     }
 }

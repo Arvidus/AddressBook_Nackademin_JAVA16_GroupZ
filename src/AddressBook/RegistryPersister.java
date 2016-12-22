@@ -4,7 +4,11 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class RegistryPersister {
-    public static synchronized void save(){
+    Registry registry = null;
+    public RegistryPersister(Registry registry){
+        this.registry = registry;
+    }
+    public synchronized void save(){
         File file = new File("contacts.txt");
 
         try{
@@ -12,7 +16,7 @@ public class RegistryPersister {
                 file.createNewFile();
             FileOutputStream fos = new FileOutputStream(file);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(Registry.contacts);
+            oos.writeObject(registry.contacts);
             fos.close();
             oos.close();
 
@@ -20,11 +24,11 @@ public class RegistryPersister {
             ex.printStackTrace();
         }
     }
-    public static void load(){
+    public void load(){
         File file = new File("contacts.txt");
         try (FileInputStream load = new FileInputStream(file);
             ObjectInputStream ois = new ObjectInputStream(load)){
-            Registry.contacts = (ArrayList<Contact>) ois.readObject();
+            registry.contacts = (ArrayList<Contact>) ois.readObject();
 
         } catch (Exception ex) {
             ex.printStackTrace();
