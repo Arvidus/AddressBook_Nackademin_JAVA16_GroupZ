@@ -8,9 +8,11 @@ public class CommandLineInterface implements InputHandler {
 
     public CommandLineInterface(){
 
-        Console console = new Console();
-        consolePrinter = console;
-        console.registerInputHandler(this);
+        while (true) {
+            Console console = new Console();
+            consolePrinter = console;
+            console.registerInputHandler(this);
+        }
     }
 
 
