@@ -7,19 +7,16 @@ public class CommandLineInterface implements InputHandler {
 
     public CommandLineInterface(){
 
-while (true) {
-    Console console = new Console();
-    console.registerInputHandler(this);
-}
+        Console console = new Console();
+        console.registerInputHandler(this);
 
     }
 
     @Override
     public void handle(CommandLine commandLine) {
-        //System.out.print("Kommer vi hit?");
         try {
             commandInterpreter.interpret(commandLine);
-        } catch (InvalidCommandException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
