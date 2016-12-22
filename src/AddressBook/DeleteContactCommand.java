@@ -19,11 +19,11 @@ public class DeleteContactCommand implements Command {
 
 
     public String getName(){
-        return null;
+        return "delete";
     }
 
     public String getDescription(){
-        return null;
+        return "deletes a contact using its id.";
     }
 
     public void execute(){

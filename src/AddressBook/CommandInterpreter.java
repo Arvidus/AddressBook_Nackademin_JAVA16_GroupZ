@@ -4,19 +4,19 @@ package AddressBook;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommandInterpreter {
+public class CommandInterpreter{
 
     Registry registry = new Registry();
-    ConsolePrinter consolePrinter;
+    ConsolePrinter consolePrinter = null;
 
     public CommandInterpreter() {
     }
 
 
-    public void interpret(CommandLine commandLine){
+    public void interpret(CommandLine commandLine) throws InvalidCommandException{
 
-        //List<String> temp = commandLine.parameters;
-        ArrayList<String> temp = new ArrayList<>();
+        List<String> temp = commandLine.parameters;
+        //ArrayList<String> temp = new ArrayList<>();
 
         switch(temp.get(0)){
             case "add":
@@ -28,14 +28,19 @@ public class CommandInterpreter {
                 deleteContactCommand.execute();
                 break;
             case "list":
-                new ListCommand(registry);
+                ListCommand listCommand = new ListCommand(registry);
+                listCommand.execute();
                 break;
             case "search":
+                SearchCommand searchCommand = new SearchCommand(consolePrinter, registry, temp);
+                searchCommand.execute();
                 break;
             case "help":
                 break;
             case "quit":
                 break;
+            default:
+                throw new InvalidCommandException("Could not interpret the command");
         }
     }
 
