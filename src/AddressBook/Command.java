@@ -2,7 +2,7 @@ package AddressBook;
 
 public interface Command {
 
-    public void getName();
-    public void getDescription();
+    public String getName();
+    public String getDescription();
     public void execute();
 }

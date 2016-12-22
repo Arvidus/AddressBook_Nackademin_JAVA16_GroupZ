@@ -7,24 +7,37 @@ import java.util.List;
  */
 public class DeleteContactCommand implements Command {
 
-    public DeleteContactCommand(List<String> parameters){
+    List<String> parameters = null;
+    ConsolePrinter consolePrinter = null;
+    Registry registry = null;
 
+    public DeleteContactCommand(List<String> parameters, ConsolePrinter consolePrinter, Registry registry){
+        this.parameters = parameters;
+        this.consolePrinter = consolePrinter;
+        this.registry = registry;
     }
 
 
-    public void getName(){
-
+    public String getName(){
+        return null;
     }
 
-    public void getDescription(){
-
+    public String getDescription(){
+        return null;
     }
 
     public void execute(){
-
+        if (validate()) {
+            consolePrinter.print("Deleting the contact with id: " + parameters.get(1));
+            registry.deleteContact(parameters.get(1));
+        }
     }
 
-    private void validate(){
-
+    private boolean validate(){
+        if (parameters.get(1).length() > 0){
+            return true;
+        } else {
+            return false;
+        }
     }
 }
