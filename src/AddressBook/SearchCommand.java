@@ -11,6 +11,7 @@ public class SearchCommand implements Command {
     List<String> parameters = new ArrayList<String>();
     Registry registry = null;
     ConsolePrinter consolePrinter = null;
+    ContactListSorter contactListSorter = new ContactListSorter();
 
     public SearchCommand(ConsolePrinter consolePrinter, Registry registry, List<String> parameters){
         this.consolePrinter = consolePrinter;
@@ -32,7 +33,7 @@ public class SearchCommand implements Command {
     public void execute() {
 
         if(parameters.get(1).length() != 0) {
-            consolePrinter.print("" + new ContactListSorter(registry.search(parameters.get(1))));
+            consolePrinter.print("" + contactListSorter.sort(registry.search(parameters.get(1))));
         } else
             consolePrinter.print("You need a search term to search for a contact.");
     }
