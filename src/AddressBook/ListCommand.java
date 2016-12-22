@@ -3,12 +3,12 @@ package AddressBook;
 
 public class ListCommand implements Command {
 
+    String listResults = "";
+
     public ListCommand(Registry registry){
         for (Contact contact : registry.getContacts()){
-            System.out.println(contact.getID() + " " + contact.getFirstName() + " " + contact.getLastName() + " " + contact.getEmailAdress() + "\n");
+           listResults += contact.getID() + " " + contact.getFirstName() + " " + contact.getLastName() + " " + contact.getEmailAdress() + "\n");
         }
-
-
     }
 
     public String getName(){
@@ -20,7 +20,7 @@ public class ListCommand implements Command {
     }
 
     public void execute(){
-
+        System.out.println(listResults);
     }
 
     private void validate(){
