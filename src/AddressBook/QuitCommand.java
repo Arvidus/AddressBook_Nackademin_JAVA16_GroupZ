@@ -2,9 +2,6 @@ package AddressBook;
 
 import java.util.List;
 
-/**
- * Created by Gustav on 2016-12-21.
- */
 public class QuitCommand implements Command{
     List<String> parameters = null;
     ConsolePrinter consolePrinter = null;
