@@ -3,18 +3,22 @@ package AddressBook;
 
 import com.sun.org.apache.xml.internal.resolver.Catalog;
 
-import java.util.ArrayList;
+import java.io.File;
 import java.util.List;
 
 public class CommandInterpreter{
 
 
+    File registryContacts = new File("contacts.txt");
     Registry registry = new Registry();
     RemoteRegistry remoteRegistry = new RemoteRegistry();
     CatalogueLoader catalogueLoader = new CatalogueLoader(remoteRegistry);
     ConsolePrinter consolePrinter = null;
 
     public CommandInterpreter() {
+
+        if (registryContacts.exists())
+            registry.load();
         catalogueLoader.run();
     }
 
