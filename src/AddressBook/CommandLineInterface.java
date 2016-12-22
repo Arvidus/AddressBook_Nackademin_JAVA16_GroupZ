@@ -19,6 +19,8 @@ while (true) {
         //System.out.print("Kommer vi hit?");
         try {
             commandInterpreter.interpret(commandLine);
+        } catch (InvalidCommandParameterException e) {
+            e.printStackTrace();
         } catch (InvalidCommandException e) {
             e.printStackTrace();
         }

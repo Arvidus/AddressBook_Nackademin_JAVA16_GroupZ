@@ -30,8 +30,9 @@ public class SearchCommand implements Command {
 
     @Override
     public void execute() {
+
         if(parameters.get(1).length() != 0) {
-            consolePrinter.print("" + registry.search(parameters.get(1)));
+            consolePrinter.print("" + new ContactListSorter(registry.search(parameters.get(1))));
         } else
             consolePrinter.print("You need a search term to search for a contact.");
     }
