@@ -11,7 +11,7 @@ public class DeleteContactCommand implements Command {
     ConsolePrinter consolePrinter = null;
     Registry registry = null;
 
-    public DeleteContactCommand(List<String> parameters, ConsolePrinter consolePrinter, Registry registry){
+    public DeleteContactCommand( ConsolePrinter consolePrinter, Registry registry, List<String> parameters){
         this.parameters = parameters;
         this.consolePrinter = consolePrinter;
         this.registry = registry;

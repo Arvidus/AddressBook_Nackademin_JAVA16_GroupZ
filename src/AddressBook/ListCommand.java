@@ -11,12 +11,12 @@ public class ListCommand implements Command {
 
     }
 
-    public void getName(){
-
+    public String getName(){
+        return null;
     }
 
-    public void getDescription(){
-
+    public String getDescription(){
+        return null;
     }
 
     public void execute(){

@@ -16,14 +16,15 @@ public class CommandInterpreter {
 
     public Command interpret (CommandLine commandLine){
 
-        List<String> temp = commandLine.parameters;
+        //List<String> temp = commandLine.parameters;
+        ArrayList<String> temp = new ArrayList<>();
 
         switch(temp.get(0)){
             case "add":
-               // AddContactCommand(, temp, registry);
+                new AddContactCommand(consolePrinter, registry, temp);
                 break;
             case "delete":
-               // DeleteContactCommand();
+                new DeleteContactCommand(consolePrinter, registry, temp);
                 break;
             case "list":
                 new ListCommand(registry);
