@@ -1,19 +1,17 @@
 
 package AddressBook;
 
+import com.sun.org.apache.xml.internal.resolver.Catalog;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class CommandInterpreter{
 
-    Registry registry = new Registry();
+
     ConsolePrinter consolePrinter = null;
 
-    public CommandInterpreter() {
-    }
-
-
-    public void interpret(CommandLine commandLine, ConsolePrinter consolePrinter) throws InvalidCommandException, InvalidCommandParameterException{
+    public void interpret(CommandLine commandLine, Registry registry, ConsolePrinter consolePrinter) throws InvalidCommandException, InvalidCommandParameterException{
 
         List<String> temp = commandLine.parameters;
         this.consolePrinter = consolePrinter;
