@@ -14,17 +14,19 @@ public class CommandInterpreter {
     }
 
 
-    public Command interpret (CommandLine commandLine){
+    public void interpret(CommandLine commandLine){
 
         //List<String> temp = commandLine.parameters;
         ArrayList<String> temp = new ArrayList<>();
 
         switch(temp.get(0)){
             case "add":
-                new AddContactCommand(consolePrinter, registry, temp);
+                AddContactCommand addContactCommand = new AddContactCommand(consolePrinter, registry, temp);
+                addContactCommand.execute();
                 break;
             case "delete":
-                new DeleteContactCommand(consolePrinter, registry, temp);
+                DeleteContactCommand deleteContactCommand = new DeleteContactCommand(consolePrinter, registry, temp);
+                deleteContactCommand.execute();
                 break;
             case "list":
                 new ListCommand(registry);
@@ -38,5 +40,4 @@ public class CommandInterpreter {
         }
     }
 
-    }
 }
