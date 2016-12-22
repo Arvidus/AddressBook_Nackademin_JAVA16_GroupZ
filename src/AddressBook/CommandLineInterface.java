@@ -11,17 +11,14 @@ public class CommandLineInterface implements InputHandler {
         Console console = new Console();
         consolePrinter = console;
         console.registerInputHandler(this);
-}
-
     }
+
 
     @Override
     public void handle(CommandLine commandLine) {
         try {
-            commandInterpreter.interpret(commandLine);
-        } catch (InvalidCommandParameterException e) {
-            e.printStackTrace();
-        } catch (InvalidCommandException e) {
+            commandInterpreter.interpret(commandLine, consolePrinter);
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
