@@ -33,7 +33,8 @@ public class CommandInterpreter{
                 listCommand.execute();
                 break;
             case "search":
-                SearchCommand searchCommand = new SearchCommand();
+                SearchCommand searchCommand = new SearchCommand(consolePrinter, registry, temp);
+                searchCommand.execute();
                 break;
             case "help":
                 break;
