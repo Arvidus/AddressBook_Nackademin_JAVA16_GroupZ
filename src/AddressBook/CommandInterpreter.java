@@ -33,10 +33,12 @@ public class CommandInterpreter{
             case "add":
                 AddContactCommand addContactCommand = new AddContactCommand(consolePrinter, registry, temp);
                 addContactCommand.execute();
+                new AutoSave();
                 break;
             case "delete":
                 DeleteContactCommand deleteContactCommand = new DeleteContactCommand(consolePrinter, registry, temp);
                 deleteContactCommand.execute();
+                new AutoSave();
                 break;
             case "list":
                 ListCommand listCommand = new ListCommand(registry);
