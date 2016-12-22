@@ -13,9 +13,10 @@ public class CommandInterpreter{
     }
 
 
-    public void interpret(CommandLine commandLine) throws InvalidCommandException, InvalidCommandParameterException{
+    public void interpret(CommandLine commandLine, ConsolePrinter consolePrinter) throws InvalidCommandException, InvalidCommandParameterException{
 
         List<String> temp = commandLine.parameters;
+        this.consolePrinter = consolePrinter;
         //ArrayList<String> temp = new ArrayList<>();
 
         switch(temp.get(0)){

@@ -23,7 +23,7 @@ public class QuitCommand implements Command{
 
     @Override
     public void execute() throws InvalidCommandParameterException{
-        if(parameters.get(1).length() > 0){
+        if(parameters.get(0).length() > 0){
             consolePrinter.print("quiting the program.");
             System.exit(0);
         } else {

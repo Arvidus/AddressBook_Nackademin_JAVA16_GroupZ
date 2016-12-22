@@ -7,7 +7,7 @@ public class ListCommand implements Command {
 
     public ListCommand(Registry registry){
         for (Contact contact : registry.getContacts()){
-           listResults += contact.getID() + " " + contact.getFirstName() + " " + contact.getLastName() + " " + contact.getEmailAdress() + "\n");
+           listResults += contact.getID() + " " + contact.getFirstName() + " " + contact.getLastName() + " " + contact.getEmailAdress() + "\n";
         }
     }
 
