@@ -17,6 +17,10 @@ while (true) {
     @Override
     public void handle(CommandLine commandLine) {
         //System.out.print("Kommer vi hit?");
-        commandInterpreter.interpret(commandLine);
+        try {
+            commandInterpreter.interpret(commandLine);
+        } catch (InvalidCommandException e) {
+            e.printStackTrace();
+        }
     }
 }
