@@ -10,7 +10,8 @@ public class AddContactCommand implements Command{
     Registry registry = new Registry();
 
     public AddContactCommand(ConsolePrinter consolePrinter, Registry registry, ArrayList<String> parameters) {
-
+        this.registry = registry;
+        this.parameters = parameters;
     }
 
     @Override
@@ -25,7 +26,7 @@ public class AddContactCommand implements Command{
 
     @Override
     public void execute() {
-
+        registry.addContact(parameters.get(1), parameters.get(2), parameters.get(3));
     }
 
     private void validate(){
