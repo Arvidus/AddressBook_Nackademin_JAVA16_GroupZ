@@ -7,7 +7,7 @@ import java.util.List;
 public class CommandInterpreter {
 
     Registry registry = new Registry();
-    ConsolePrinter consolePrinter;
+    ConsolePrinter consolePrinter = null;
 
     public CommandInterpreter(ConsolePrinter consolePrinter) {
         this.consolePrinter = consolePrinter;
@@ -16,8 +16,8 @@ public class CommandInterpreter {
 
     public void interpret(CommandLine commandLine){
 
-        //List<String> temp = commandLine.parameters;
-        ArrayList<String> temp = new ArrayList<>();
+        List<String> temp = commandLine.parameters;
+        //ArrayList<String> temp = new ArrayList<>();
 
         switch(temp.get(0)){
             case "add":

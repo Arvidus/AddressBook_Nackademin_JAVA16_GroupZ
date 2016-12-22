@@ -10,7 +10,7 @@ public class AddContactCommand implements Command{
     Registry registry = null;
     ConsolePrinter consolePrinter = null;
 
-    public AddContactCommand(ConsolePrinter consolePrinter, Registry registry, ArrayList<String> parameters) {
+    public AddContactCommand(ConsolePrinter consolePrinter, Registry registry, List<String> parameters) {
         this.consolePrinter = consolePrinter;
         this.registry = registry;
         this.parameters = parameters;
