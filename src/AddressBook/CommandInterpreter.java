@@ -9,8 +9,9 @@ import java.util.List;
 public class CommandInterpreter{
 
 
-    File registryContacts = new File("contacts.txt");
+    File registryContacts = new File("contacts.ser");
     Registry registry = new Registry();
+    RegistryPersister registryPersister = new RegistryPersister(registry);
     RemoteRegistry remoteRegistry = new RemoteRegistry();
     CatalogueLoader catalogueLoader = new CatalogueLoader(remoteRegistry);
     ConsolePrinter consolePrinter = null;
@@ -18,7 +19,7 @@ public class CommandInterpreter{
     public CommandInterpreter() {
 
         if (registryContacts.exists())
-            registry.load();
+            registryPersister.load();
         catalogueLoader.run();
     }
 
@@ -33,12 +34,12 @@ public class CommandInterpreter{
             case "add":
                 AddContactCommand addContactCommand = new AddContactCommand(consolePrinter, registry, temp);
                 addContactCommand.execute();
-                new AutoSave();
+                new AutoSave(registryPersister);
                 break;
             case "delete":
                 DeleteContactCommand deleteContactCommand = new DeleteContactCommand(consolePrinter, registry, temp);
                 deleteContactCommand.execute();
-                new AutoSave();
+                new AutoSave(registryPersister);
                 break;
             case "list":
                 ListCommand listCommand = new ListCommand(registry);

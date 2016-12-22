@@ -1,5 +1,7 @@
 package AddressBook;
 
-public class ContactDetails {
+import java.io.Serializable;
+
+public class ContactDetails implements Serializable{
     protected String firstName, lastName, email;
 }

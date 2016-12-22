@@ -9,7 +9,7 @@ public class RegistryPersister {
         this.registry = registry;
     }
     public synchronized void save(){
-        File file = new File("contacts.txt");
+        File file = new File("contacts.ser");
 
         try{
             if(!file.exists())
@@ -25,7 +25,7 @@ public class RegistryPersister {
         }
     }
     public void load(){
-        File file = new File("contacts.txt");
+        File file = new File("contacts.ser");
         try (FileInputStream load = new FileInputStream(file);
             ObjectInputStream ois = new ObjectInputStream(load)){
             registry.contacts = (ArrayList<Contact>) ois.readObject();
