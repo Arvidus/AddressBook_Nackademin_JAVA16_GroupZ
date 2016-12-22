@@ -9,9 +9,17 @@ import java.util.List;
 public class CommandInterpreter{
 
 
+    Registry registry = new Registry();
+    RemoteRegistry remoteRegistry = new RemoteRegistry();
+    CatalogueLoader catalogueLoader = new CatalogueLoader(remoteRegistry);
     ConsolePrinter consolePrinter = null;
 
-    public void interpret(CommandLine commandLine, Registry registry, ConsolePrinter consolePrinter) throws InvalidCommandException, InvalidCommandParameterException{
+    public CommandInterpreter() {
+        catalogueLoader.run();
+    }
+
+
+    public void interpret(CommandLine commandLine, ConsolePrinter consolePrinter) throws InvalidCommandException, InvalidCommandParameterException{
 
         List<String> temp = commandLine.parameters;
         this.consolePrinter = consolePrinter;
