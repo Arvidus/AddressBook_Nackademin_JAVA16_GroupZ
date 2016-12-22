@@ -18,7 +18,7 @@ public class CommandLine {
 
         String[] parameterLines = command.split(" ");
 
-        for (int i = 0; i < parameterLines.length -1; i++){
+        for (int i = 0; i < parameterLines.length; i++){
             commandLine.parameters.add(parameterLines[i]);
         }
 
