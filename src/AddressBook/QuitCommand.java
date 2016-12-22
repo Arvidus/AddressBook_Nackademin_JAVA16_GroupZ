@@ -22,10 +22,12 @@ public class QuitCommand implements Command{
     }
 
     @Override
-    public void execute() {
+    public void execute() throws InvalidCommandParameterException{
         if(parameters.get(1).length() > 0){
             consolePrinter.print("quiting the program.");
             System.exit(0);
+        } else {
+            throw new InvalidCommandParameterException("the \'quit\' command does not need any parameters.");
         }
     }
 }

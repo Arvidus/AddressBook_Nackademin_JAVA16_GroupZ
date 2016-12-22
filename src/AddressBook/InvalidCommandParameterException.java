@@ -1,9 +1,8 @@
 package AddressBook;
 
-public class InvalidCommandParameterException {
+public class InvalidCommandParameterException extends Exception{
 
-    public InvalidCommandParameterException(){
-
-            System.out.println("Invalid amount of parameters");
+    public InvalidCommandParameterException(String message){
+        super(message);
     }
 }

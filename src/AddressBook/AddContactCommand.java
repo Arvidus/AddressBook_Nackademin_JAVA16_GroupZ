@@ -27,12 +27,12 @@ public class AddContactCommand implements Command{
     }
 
     @Override
-    public void execute() {
+    public void execute() throws InvalidCommandParameterException{
         if(validate()) {
             consolePrinter.print("Added " + parameters.get(1) + " " + parameters.get(2) + " to the contact list.");
             registry.addContact(parameters.get(1), parameters.get(2), parameters.get(3));
         } else {
-            consolePrinter.print("Could not validate the contact");
+            throw new InvalidCommandParameterException("Invalid parameters.");
         }
     }
 

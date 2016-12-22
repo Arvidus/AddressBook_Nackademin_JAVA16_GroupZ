@@ -26,10 +26,12 @@ public class DeleteContactCommand implements Command {
         return "deletes a contact using its id.";
     }
 
-    public void execute(){
+    public void execute() throws InvalidCommandParameterException{
         if (validate()) {
             consolePrinter.print("Deleting the contact with id: " + parameters.get(1));
             registry.deleteContact(parameters.get(1));
+        } else {
+            throw new InvalidCommandParameterException("Invalid parameters.");
         }
     }
 

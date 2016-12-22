@@ -13,7 +13,7 @@ public class CommandInterpreter{
     }
 
 
-    public void interpret(CommandLine commandLine) throws InvalidCommandException{
+    public void interpret(CommandLine commandLine) throws InvalidCommandException, InvalidCommandParameterException{
 
         List<String> temp = commandLine.parameters;
         //ArrayList<String> temp = new ArrayList<>();
