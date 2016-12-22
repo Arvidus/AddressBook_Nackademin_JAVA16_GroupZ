@@ -6,10 +6,15 @@ import java.util.ArrayList;
 public class RegistryPersister {
     public static synchronized void save(){
         File file = new File("contacts.txt");
-        try(FileOutputStream fos = new FileOutputStream(file);
-            ObjectOutputStream oos = new ObjectOutputStream(fos)) {
 
+        try{
+            if(!file.exists())
+                file.createNewFile();
+            FileOutputStream fos = new FileOutputStream(file);
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(Registry.contacts);
+            fos.close();
+            oos.close();
 
         } catch (Exception ex) {
             ex.printStackTrace();
