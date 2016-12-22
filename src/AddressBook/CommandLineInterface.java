@@ -1,13 +1,9 @@
 
 package AddressBook;
 
-
-import java.util.Scanner;
-
-
 public class CommandLineInterface implements InputHandler {
 
-    CommandInterpreter commandInterpreter = new CommandInterpreter(console);
+    CommandInterpreter commandInterpreter = new CommandInterpreter();
 
     public CommandLineInterface(){
 
@@ -20,7 +16,7 @@ while (true) {
 
     @Override
     public void handle(CommandLine commandLine) {
-        System.out.print("Kommer vi hit?");
+        //System.out.print("Kommer vi hit?");
         commandInterpreter.interpret(commandLine);
     }
 }

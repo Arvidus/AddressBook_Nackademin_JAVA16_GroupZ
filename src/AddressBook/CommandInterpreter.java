@@ -9,8 +9,7 @@ public class CommandInterpreter{
     Registry registry = new Registry();
     ConsolePrinter consolePrinter = null;
 
-    public CommandInterpreter(ConsolePrinter consolePrinter) {
-        this.consolePrinter = consolePrinter;
+    public CommandInterpreter() {
     }
 
 
