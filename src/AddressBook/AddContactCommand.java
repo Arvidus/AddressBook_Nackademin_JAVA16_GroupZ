@@ -1,6 +1,8 @@
 package AddressBook;
 
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,10 +28,18 @@ public class AddContactCommand implements Command{
 
     @Override
     public void execute() {
-        registry.addContact(parameters.get(1), parameters.get(2), parameters.get(3));
+        if(validate()) {
+            registry.addContact(parameters.get(1), parameters.get(2), parameters.get(3));
+        } else {
+            System.out.println("Could not validate the Add command.");
+        }
     }
 
-    private void validate(){
-
+    private boolean validate(){
+        if(parameters.get(1).length() > 0 && parameters.get(2).length() > 0 %% parameters.get(3).length() > 0){
+            return true;
+        } else {
+            return false;
+        }
     }
 }
