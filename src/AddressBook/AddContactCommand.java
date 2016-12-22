@@ -36,7 +36,7 @@ public class AddContactCommand implements Command{
     }
 
     private boolean validate(){
-        if(parameters.get(1).length() > 0 && parameters.get(2).length() > 0 %% parameters.get(3).length() > 0){
+        if (parameters.get(1).length() > 0 && parameters.get(2).length() > 0 && parameters.get(3).length() > 0){
             return true;
         } else {
             return false;
