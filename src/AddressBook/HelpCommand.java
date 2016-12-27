@@ -1,7 +1,20 @@
 package AddressBook;
 
-public class HelpCommand {
-    public HelpCommand(){
+import java.util.ArrayList;
+import java.util.List;
 
+public class HelpCommand {
+    private List<Command> commands = null;
+    private HelpMenu helpMenu = new HelpMenu();
+
+    public HelpCommand(){
+        commands = new ArrayList<>();
+        
+    }
+
+    public String format(Command command){
+
+
+        return null;
     }
 }
