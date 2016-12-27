@@ -9,7 +9,7 @@ public class HelpCommand {
 
     public HelpCommand(){
         commands = new ArrayList<>();
-        
+
     }
 
     public String format(Command command){

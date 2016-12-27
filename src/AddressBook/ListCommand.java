@@ -1,14 +1,19 @@
 package AddressBook;
 
 
+import java.util.List;
+
 public class ListCommand implements Command {
 
-    String listResults = "";
+    ConsolePrinter consolePrinter = null;
+    List<Contact> contactList = null;
+    ContactFormatter contactFormatter = null;
 
-    public ListCommand(Registry registry){
-        for (Contact contact : registry.getContacts()){
-           listResults += contact.getID() + " " + contact.getFirstName() + " " + contact.getLastName() + " " + contact.getEmailAdress() + "\n";
-        }
+
+    public ListCommand(ConsolePrinter consolePrinter, List<Contact> contactList){
+        this.consolePrinter = consolePrinter;
+        this.contactList = contactList;
+        this.contactFormatter = new ContactFormatter();
     }
 
     public String getName(){
@@ -20,7 +25,10 @@ public class ListCommand implements Command {
     }
 
     public void execute(){
-        System.out.println(listResults);
+        consolePrinter.print("Contacts:\n");
+        for(Contact c : contactList){
+            consolePrinter.print(contactFormatter.format(c));
+        }
     }
 
     private void validate(){

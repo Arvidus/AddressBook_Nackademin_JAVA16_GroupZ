@@ -4,6 +4,7 @@ package AddressBook;
 import com.sun.org.apache.xml.internal.resolver.Catalog;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 public class CommandInterpreter{
@@ -12,9 +13,10 @@ public class CommandInterpreter{
     File registryContacts = new File("contacts.ser");
     Registry registry = new Registry();
     RegistryPersister registryPersister = new RegistryPersister(registry);
-    RemoteRegistry remoteRegistry = new RemoteRegistry();
+    RemoteRegistry remoteRegistry = null;
     CatalogueLoader catalogueLoader = new CatalogueLoader(remoteRegistry);
     ConsolePrinter consolePrinter = null;
+    List<Contact> contactList = null;
 
     public CommandInterpreter() {
 
@@ -28,7 +30,9 @@ public class CommandInterpreter{
 
         List<String> temp = commandLine.parameters;
         this.consolePrinter = consolePrinter;
-        //ArrayList<String> temp = new ArrayList<>();
+        contactList = registry.getContacts();
+        remoteRegistry = new RemoteRegistry();
+        contactList.addAll(remoteRegistry.getContacts());
 
         switch(temp.get(0)){
             case "add":
@@ -39,10 +43,9 @@ public class CommandInterpreter{
             case "delete":
                 DeleteContactCommand deleteContactCommand = new DeleteContactCommand(consolePrinter, registry, temp);
                 deleteContactCommand.execute();
-                new AutoSave(registryPersister);
                 break;
             case "list":
-                ListCommand listCommand = new ListCommand(registry);
+                ListCommand listCommand = new ListCommand(consolePrinter, contactList);
                 listCommand.execute();
                 break;
             case "search":
