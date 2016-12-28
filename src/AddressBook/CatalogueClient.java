@@ -50,7 +50,16 @@ public class CatalogueClient {
     public String waitForResponse(){
 
         StringBuilder sb = new StringBuilder();
-        return "";
+        String response = "";
+        try {
+            while ((response = reader.readLine()).length() > 0) {
+                sb.append(response);
+                sb.append("\n");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return sb.toString();
     }
 
     public void disconnect(){

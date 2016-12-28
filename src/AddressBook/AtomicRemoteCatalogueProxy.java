@@ -23,7 +23,6 @@ public class AtomicRemoteCatalogueProxy implements RemoteCatalogueProxy {
         cc.disconnect();
 
         String[] contactRow = tempResponse.split("\n");
-        String[] contactDetails;
 
         for (String contact : contactRow) {
             if (contact.length() > 0) {
