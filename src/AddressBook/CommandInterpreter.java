@@ -7,7 +7,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommandInterpreter{
+public class CommandInterpreter {
 
 
     File registryContacts = new File("contacts.ser");
@@ -22,44 +22,54 @@ public class CommandInterpreter{
 
         if (registryContacts.exists())
             registryPersister.load();
-        catalogueLoader.run();
+        // Commenting out the remote registry code, because of exception spamming.
+        //catalogueLoader.run();
     }
 
 
-    public void interpret(CommandLine commandLine, ConsolePrinter consolePrinter) throws InvalidCommandException, InvalidCommandParameterException{
+    public void interpret(CommandLine commandLine, ConsolePrinter consolePrinter) throws InvalidCommandException, InvalidCommandParameterException {
 
         List<String> temp = commandLine.parameters;
+        List<Command> commandList = null;
         this.consolePrinter = consolePrinter;
         contactList = registry.getContacts();
         remoteRegistry = new RemoteRegistry();
         contactList.addAll(remoteRegistry.getContacts());
 
-        switch(temp.get(0)){
+        AddContactCommand addContactCommand = new AddContactCommand(consolePrinter, registry, temp);
+        DeleteContactCommand deleteContactCommand = new DeleteContactCommand(consolePrinter, registry, temp);
+        ListCommand listCommand = new ListCommand(consolePrinter, contactList);
+        SearchCommand searchCommand = new SearchCommand(consolePrinter, registry, temp);
+        QuitCommand quitCommand = new QuitCommand(consolePrinter, temp);
+        HelpCommand helpCommand = new HelpCommand();
+
+        HelpMenu helpMenu = new HelpMenu();
+
+        switch (temp.get(0)) {
             case "add":
-                AddContactCommand addContactCommand = new AddContactCommand(consolePrinter, registry, temp);
                 addContactCommand.execute();
                 new AutoSave(registryPersister);
                 break;
             case "delete":
-                DeleteContactCommand deleteContactCommand = new DeleteContactCommand(consolePrinter, registry, temp);
                 deleteContactCommand.execute();
                 break;
             case "list":
-                ListCommand listCommand = new ListCommand(consolePrinter, contactList);
                 listCommand.execute();
                 break;
             case "search":
-                SearchCommand searchCommand = new SearchCommand(consolePrinter, registry, temp);
                 searchCommand.execute();
                 break;
             case "help":
+                commandList = helpMenu.getCommands();
+                for (Command c : commandList) {
+                    consolePrinter.print(helpCommand.format(c));
+                }
                 break;
             case "quit":
-                QuitCommand quitCommand = new QuitCommand(consolePrinter, temp);
                 quitCommand.execute();
                 break;
             default:
-                throw new InvalidCommandException("Could not interpret the command");
+                throw new InvalidCommandException("Could not interpret the command.");
         }
     }
 

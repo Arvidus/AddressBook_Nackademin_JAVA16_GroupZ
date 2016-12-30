@@ -1,6 +1,7 @@
 package AddressBook;
 
 import java.io.*;
+import java.net.ConnectException;
 import java.net.Socket;
 
 /**
@@ -40,7 +41,6 @@ public class CatalogueClient {
 
             writer.println(request);
             writer.flush();
-
 
         } catch (IOException ex) {
             ex.printStackTrace();
